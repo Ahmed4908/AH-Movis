@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+/*Start Header*/
+#header {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/R.jpeg);
+    background-size: cover;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav #nav-logo {
+    margin: 20px;
+    color: #fff;
+    font-size: 25px;
+}
+
+#nav #nav-icon a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+    transition: 0.4s;
+}
+
+#nav #nav-icon a:hover {
+    color: #ffd765;
+}
+
+#nav #nav-opthan {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav #nav-opthan span {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+}
+
+#nav #nav-opthan select {
+    background: none;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+#nav #nav-opthan select:hover {
+    color: #ffd765;
+}
+
+#nav #nav-opthan button {
+    background: none;
+    border: solid #ffd765 2px;
+    padding: 15px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 35px;
+    width: 150px;
+    transition: 0.4s;
+}
+
+#nav #nav-opthan button:hover {
+    background: #ffd765;
+    color: #000;
+    font-size: 20px;
+}
+
+#bac {
+    padding: 250px 30px;
+}
+
+#bac h2 {
+    color: #ffd765;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#bac p {
+    font-size: 25px;
+    color: #fff;
+}
+
+#bac p span {
+    color: #ffd765;
+    font-size: 50px;
+}
+
+#div-p p {
+    background-color: #ffd765;
+    display: inline-block;
+    padding: 7px 10px;
+    color: #000;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#bac button {
+    background: none;
+    border: solid #ffd765 2px;
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 35px;
+    width: 150px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+#bac button:hover {
+    background: #ffd765;
+    color: #000;
+}
+/*End Header*/
+/*Start Poster*/
+#poster {
+    padding: 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #162227;
+}
+
+#titel {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#titel #l p {
+    font-size: 20px;
+    color: #ffd765;
+}
+
+#titel #l h2 {
+    font-size: 40px;
+    color:#fff;
+}
+
+#titel #r a {
+    text-decoration: none;
+    background-color: #162227;
+    color: #fff;
+    margin-left: 10px;
+    padding: 15px;
+    border-radius: 50px;
+    border: solid #000 2px;
+    transition: 0.4s;
+}
+
+#titel #r a:focus {
+    border: solid #ffd765 2px;
+}
+
+#card {
+    margin-top: 20px;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 450px;
+    border-radius: 14px;
+}
+
+#card-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    border-radius: 12px;
+}
+
+#datalest {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    backdrop-filter: blur(15px);
+    background-color: #1622277c;
+    transition: 0.5s;
+}
+
+#card:hover #datalest {
+    bottom: 0;
+}
+
+#datalest h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+#datalest p {
+    color: #fff;
+    font-size: 15px;
+}
+
+#star {
+    display: inline-block;
+}
+
+#star input {
+    display: none;
+}
+
+#star label {
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#star label::before {
+    content: '\2605';
+    font-size: 30px;
+}
+
+#star input:checked ~ label,
+#star label:hover,
+#star label:hover ~ label {
+    color: #ffd765;
+    transition: 0.3s;
+}
+
+#datalest button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: solid #ffd765 2px;
+    padding: 10px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 35px;
+    width: 100px;
+    transition: 0.4s;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#datalest button:hover {
+    background: #ffd765;
+    color: #000;
+    font-size: 15px;
+}
+/*End Poster*/
+/*Start Live*/
+#live {
+    background-color: #989b98;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 110px;
+    width: 100%;
+    height: 100%;
+}
+
+#live #p1 {
+    color: #ffd765;
+    font-size: 20px;
+}
+
+#live h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+#live #p2 {
+    font-size: 25px;
+}
+
+#live #h2 {
+    font-size: 40px;
+    color: red;
+}
+
+a span {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: solid #ffd765 2px;
+    padding: 10px;
+    font-size: 10px;
+    color: #000;
+    border-radius: 35px;
+    width: 100px;
+    transition: 0.4s;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+a span:hover {
+    border: double #797a79 2px;
+    background: #ffd765;
+    color: #fff;
+    font-size: 20px;
+}
+/*Start Live*/
+/*Start Info*/
+#info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #797a79;
+    padding: 60px;
+    width: 100%;
+    height: 20px;
+}
+#in-logo {
+    margin: 20px;
+    color: #fff;
+    font-size: 25px;
+}
+#in-r a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20px;
+    transition: 0.4s;
+}
+
+#in-r a:hover {
+    color: #ffd765;
+}
+
+#in-r input {
+    padding: 15px;
+    background-color: #162227;
+    border-radius: 40px;
+    border: solid #ffd765 3px;
+    color: #ddd;
+    font-size: 14px;
+}
+/*End Info*/
+/*Start Footer*/
+#footer {
+    display: flex;
+    justify-content: center;
+    background-color: #162227;
+    padding: 20px;
+}
+
+#footer h2 {
+    color: #fff;
+    font-size: 20px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #ffd765;
+    font-size: 20px;
+}
+/*End Footer*/
+
